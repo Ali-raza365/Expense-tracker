@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 500px;
+  min-height: 800px;
+  padding: 15px 50px;
+  background-color: #f4f9f9;
+  border: 1px solid green;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.balanceContainer {
+  margin: 13px 0px;
+}
+
+.transactions {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 7px;
+}
+.transactions > h1 {
+  text-align: center;
+  padding: 5px;
+}
+
+.transactions :first-child > span {
+  color: #5cb85c;
+}
+
+.transactions :last-child > span {
+  color: #d9534f;
+}
+.transaction-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 8px;
+  margin: 10px 0px;
+}
+.add-transaction {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.add-transaction span {
+  font-size: 18px;
+}
+.add-transaction input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0px;
+}
+.list {
+  position: relative;
+  cursor: pointer;
+}
+.delete-btn {
+  cursor: pointer;
+  background-color: #424242;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 333;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list:hover .delete-btn {
+  opacity: 1;
+}
